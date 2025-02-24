@@ -15,12 +15,12 @@ const Index = () => {
   }
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-black">
       <main className="flex-1 flex items-center justify-center">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            <h1 className="text-4xl font-bold mb-4">Welcome to Your App</h1>
-            <p className="text-xl text-gray-600 mb-8">Start building your amazing project here!</p>
+            <h1 className="text-4xl font-bold mb-4 text-white">Welcome to Your App</h1>
+            <p className="text-xl mb-8 text-gray-300">Start building your amazing project here!</p>
             
             <div className="flex flex-col gap-4 items-center sm:flex-row sm:justify-center">
               <Button 
