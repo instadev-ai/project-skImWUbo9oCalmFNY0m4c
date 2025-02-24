@@ -1,4 +1,4 @@
-import { Github, Twitter, Linkedin } from "lucide-react"
+import { Github, Twitter, Linkedin, Facebook } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const Footer = () => {
@@ -28,6 +28,12 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-1 items-center justify-center gap-4 md:justify-end">
+          <Button variant="ghost" size="icon" asChild>
+            <a href="mailto:itayekk1@gmail.com">
+              <Facebook className="h-4 w-4" />
+              <span className="sr-only">Facebook</span>
+            </a>
+          </Button>
           <Button variant="ghost" size="icon">
             <Github className="h-4 w-4" />
             <span className="sr-only">Github</span>
