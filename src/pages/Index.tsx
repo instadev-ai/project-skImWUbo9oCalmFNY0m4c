@@ -16,16 +16,16 @@ const Index = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <main className="flex-1">
-        <div className="container mx-auto py-12">
-          <div className="text-center mb-12">
+      <main className="flex-1 flex items-center justify-center">
+        <div className="container mx-auto px-4">
+          <div className="text-center">
             <h1 className="text-4xl font-bold mb-4">Welcome to Your App</h1>
             <p className="text-xl text-gray-600 mb-8">Start building your amazing project here!</p>
             
             <div className="flex flex-col gap-4 items-center sm:flex-row sm:justify-center">
               <Button 
                 onClick={handleContact}
-                className="w-full sm:w-auto"
+                className="w-full sm:w-auto min-w-[200px]"
               >
                 Contact
               </Button>
@@ -33,7 +33,7 @@ const Index = () => {
               <Button 
                 onClick={handleGetFriends}
                 variant="secondary"
-                className="w-full sm:w-auto"
+                className="w-full sm:w-auto min-w-[200px]"
               >
                 Get All Friends
               </Button>
@@ -41,7 +41,7 @@ const Index = () => {
               <Button 
                 onClick={handleDeleteFriends}
                 variant="destructive"
-                className="w-full sm:w-auto"
+                className="w-full sm:w-auto min-w-[200px]"
               >
                 Delete All Friends
               </Button>
@@ -51,7 +51,7 @@ const Index = () => {
       </main>
       <Footer />
     </div>
-  );
-};
+  )
+}
 
-export default Index;
+export default Index
